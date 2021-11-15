@@ -36,13 +36,14 @@ main>aside>video{
 main>div{
     position: relative;
 }
-.theme{margin: 20px 0;}
+.theme{margin: 20px 15px;}
 .theme>ul{
     display: flex;
+    justify-content: space-between;
 }
 .theme>ul>li{
     overflow: hidden;
-    flex: 0 0 25%; width: 25%;
+    flex: 0 0 24.5%; width: 24.5%;  
 }/* flex: 0 0 25% = flex: 0 1 300px로 해줘도 됨*/
 .theme>ul>li>a{
     position: relative;
@@ -106,116 +107,7 @@ div.contents b{
     font: 12px/19px "dotum",sans-serif;
     color: #e17350;
 }
-div.contents .board{
 
-}
-div.contents .news{
-    border-color: #58b549; color: #58b549;
-}
-div.contents>section.coNews{
-    overflow: hidden;
-    margin-bottom: 41px;
-    border-top: 2px solid var(--bg-pink);
-}
-div.contents>section.coNews>h1{
-    margin-bottom: 25px;
-    border-bottom: 1px solid #e1e1e1;
-}
-div.contents>section.coNews>dl{
-    float: left;
-    margin-right: 10px;
-    width: calc(50% - 10px);
-}
-div.contents>section.coNews>dl>dt{
-    margin-bottom: 27px;
-}
-div.contents>section.coNews>dl>dt>b{
-    display: block;
-    margin: 20px 0 16px 0;
-    font: 12px/19px "dotum",sans-serif;
-}
-div.contents>section.coNews>dl>dt>a{
-    display: block;
-    margin-bottom: 10px;
-    font: 18px/26px 'Malgun Gothic',sans-serif;
-    color: #222;
-}
-div.contents>section.coNews>dl>dt>time{
-    font: 14px/14px 'dotum',sans-serif;
-    color: #666
-}
-div.contents>section.coNews>dl>dd{
-    font: 14px/22px "dotum",sans-serif;
-    color: #333;
-}
-div.contents>section.coNews>div{
-    float: right;
-    margin-left: 10px;
-    width: calc(50% - 10px);
-}
-div.contents>section.coNews>div>div.banner{
-    overflow: hidden;
-}
-div.contents>section.coNews>div>div.banner>div.bannerList{
-    display: flex;
-    position: relative;
-    width: 300%;
-
-}
-div.contents>section.coNews>div>div.banner>div.bannerList>ul{
-    flex: 0 1 33.33333%; width: 33.333333%;
-    border-bottom: 1px solid #e1e1e1;
-}
-div.contents>section.coNews>div>div.banner>div.bannerList>ul>li{
-    display: flex; align-items: center;
-    height: 60px; border-top: 1px solid #e1e1e1;
-}
-div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>b{
-    flex: 0 0 57px; width: 57px;
-}
-div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>a{
-    flex: 0 1 auto;
-    display: block; padding: 0 20px 0 5px;
-    overflow: hidden;white-space: nowrap;
-    text-overflow: ellipsis;
-    font: 14px/60px 'Malgun Gothic',sans-serif;
-    color: #222;
-}
-div.contents>section.coNews>div>div.banner>div.bannerList>ul>li>time{
-    flex: 0 0 63px;
-    margin-left: auto;
-    width: 63px;
-    font: 13px/13px 'Malgun Gothic',sans-serif;
-}
-div.contents>section.coNews>div>div.ctrl{
-    position: relative;
-    margin-top: 18px; height: 21px;
-}
-div.contents>section.coNews>div>div.ctrl>p.btnPrev{
-    position: absolute;
-    left: 0;top: 0;
-    width: 12px; height: 21px;
-    background: url(../../imgs/btn_main_news_left.png) no-repeat 0 0;
-}
-div.contents>section.coNews>div>div.ctrl>p.btnNext{
-    position: absolute;
-    right: 0;top: 0;
-    width: 12px; height: 21px;
-    background: url(../../imgs/btn_main_news_right.png) no-repeat 0 0;
-}
-div.contents>section.coNews>div>div.ctrl>ul.paging{
-    text-align: center;
-    height: 21px;
-}
-div.contents>section.coNews>div>div.ctrl>ul.paging>li{
-    vertical-align: middle;
-    display: inline-block;
-    width: 14px;height: 12px;
-    background: url(../../imgs/mainnews_indicator.png)no-repeat 50% 50%;
-}
-div.contents>section.coNews>div>div.ctrl>ul.paging>li.on{
-    background: url(../../imgs/mainnews_indicator_on.png)no-repeat 50% 50%;
-}
 
 div.contents>div.coInfo{
     display: flex;

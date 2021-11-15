@@ -17,7 +17,7 @@ body{font-family: 'Nanum Gothic', sans-serif;}
 header{
     position: fixed;left: 0;top: 0;
     z-index: 9999;
-    width:100%; height: 83px;
+    width:100%; height: 80px;
     background: #fff;
     box-shadow: 0 2px 5px rgba(80,80,80,.5);
 }
@@ -50,26 +50,26 @@ header{
         z-index: 9999;
         width: 100%;
         left: 0;
-        top: 60px;
+        top: 60px;  
     }
 
-    /* 네비게이터 */
     header>div>nav.active>ul{
         display: flex;
         flex-direction: column;
         text-align: center;
         width: 100%;
+        transition: all .5s ease-out;
     }
     header>div>nav.active>ul>li{
         position: relative;
         float: left;
+        width: 100%;
         height: 32px;
         background-color: var(--br-main-pink);
         border-bottom: 2px solid var(--bg-white);
     }
     header>div>nav.active>ul>li>a{
         display: block;
-        padding-bottom: 12px;
         font-family: 'Nanum Gothic' sans-serif;
         font-weight: bold;
         font-size: 12px;
@@ -101,6 +101,8 @@ header{
 
     /* 이벤트 */
     header>div>nav.active>ul>li:hover{
+        display: flex;
+        flex-direction: column;
         background-color: var(--bg-white);
         border-bottom: 2px solid var(--br-main-pink);
     }
@@ -108,28 +110,35 @@ header{
         color: var(--br-main-pink);
     }
     header>div>nav.active>ul>li:hover>ul{
-        display: block;
-        left: -25px; top: 52px;
-        width: 185px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    header>div>nav.active>ul>li:hover>ul>li{
+        z-index: 9999;
+        height: 20px;
+        border-bottom: 2px solid var(--bg-white);
         background-color:var(--bg-pink);
     }
-    header>div>nav.active>ul>li>ul>li:hover{
-        position: relative;
-        height: 43px;
-        border-bottom: 1px solid var(--bg-white);
-        background: var(--bg-white);
+    header>div>nav.active>ul>li:hover>ul>li>a{
+        color: var(--font-white);
+        font-weight: bold;
+        display: block;
+        margin-top: 5px;
+        font-size: 10px;
     }
-    header>div>nav.active>ul>li>ul>li.child:hover{
-        margin-right: 0;
+    header>div>nav.active>ul>li>ul>li:hover{
+        height: 20px;
+        border-bottom: 2px solid var(--bg-pink);
         background: var(--bg-white);
-        border-bottom-color:var(--bg-white);
     }
     header>div>nav.active>ul>li>ul>li:hover>a{
         color: var(--br-main-pink);
         font-weight: bold;
         display: block;
-        height: 43px;
-        font-size: 14px;
+        margin-top: 5px;
+        font-size: 10px;
     }
     
     #srchBox{
