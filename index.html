@@ -28,6 +28,9 @@
     <link rel="stylesheet" media="only screen and (max-width:640px)" href="css/mobile/main.css">
     <link rel="stylesheet" media="only screen and (max-width:640px)" href="css/mobile/footer.css">
     <link rel="icon" href="imgs/favi.ico">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/header.js"></script>
 </head>
 <body id="top">
     <header>
@@ -38,8 +41,8 @@
                     <img src="imgs/h1_logo_t.png" alt="배스킨라빈스 로고" class="t res">
                 </a>
             </h1>
-            <p class="res t m"><span class="hidden">메뉴 바로가기</span></p>
-            <nav>
+            <p class="res t m" id="hambtn"><span class="hidden">메뉴 바로가기</span></p>
+            <nav class="toggle_menu">
                 <h1 class="hidden">메인 네비게이터</h1>
                 <ul>
                     <li>
@@ -88,7 +91,7 @@
                 </ul>
             </nav>
             <div id="srchBox">
-                <button><img src="imgs/icon_search.png" alt="제품검색"></button>
+                <button></button>
                 <form action="test.jsp">
                     <input type="search" placeholder="| 제품명을 입력하세요.">
                     <input type="image" src="imgs/ic_search.png" alt="검색">
@@ -115,38 +118,37 @@
         </aside>
         <div>
             <section class="theme">
-                <h1>BR MENU</h1>
                 <ul class="themeList">
                     <li>
                         <a href="#">
-                            <img src="imgs/menu1.png" alt="아이스크림">
-                            <!-- <img src="imgs/menu1.png" alt="아이스크림">
-                            <img src="imgs/menu1.png" alt="아이스크림"> -->
+                            <img src="imgs/bg_main_pr01.png" alt="아이스크림">
+                            <img src="imgs/bg_main_pr01_over.png" alt="아이스크림">
+                            <img src="imgs/product_object01.png" alt="아이스크림">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/menu2.png" alt="아이스크림케이크">
-                            <!-- <img src="imgs/menu2.png" alt="아이스크림케이크">
-                            <img src="imgs/menu2.png" alt="아이스크림케이크"> -->
+                            <img src="imgs/bg_main_pr02.png" alt="아이스크림케이크">
+                            <img src="imgs/bg_main_pr02_over.png" alt="아이스크림케이크">
+                            <img src="imgs/product_object02.png" alt="아이스크림케이크">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/menu3.png" alt="음료">
-                            <!-- <img src="imgs/menu3.png" alt="음료">
-                            <img src="imgs/menu3.png" alt="음료"> -->
+                            <img src="imgs/bg_main_pr03.png" alt="음료">
+                            <img src="imgs/bg_main_pr03_over.png" alt="음료">
+                            <img src="imgs/product_object03.png" alt="음료">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/menu4.png" alt="디저트">
-                            <!-- <img src="imgs/menu4.png" alt="디저트">
-                            <img src="imgs/menu4.png" alt="디저트"> -->
+                            <img src="imgs/bg_main_pr04.png" alt="디저트">
+                            <img src="imgs/bg_main_pr04_over.png" alt="디저트">
+                            <img src="imgs/product_object04.png" alt="디저트">
                         </a>
                     </li>
                 </ul>
-            </section><!-- 상단 도료 -->
+            </section><!-- br menu end -->
             <div class="contents">
                 <section class="coNews">
                     <h1>뉴스</h1>
@@ -248,37 +250,37 @@
                     <section>
                         <a href="#">
                             <div>
-                                <h1>회사소개</h1>
-                                <p class="txt">혁신적인 도료산업의 리더, 강남제비스코를 소개합니다.</p>
+                                <h1>INSTA EVENT</h1>
+                                <p class="txt">치즈나무숲 사진을 인스타그램에 올려주세요!</p>
                             </div>
-                            <p class="pic"><img src="imgs/img_main_company_m.jpg" alt="회사소개"></p>
+                            <p class="pic"><img src="imgs/main_event01.png" alt="치즈나무숲 인스타이벤트"></p>
                         </a>
                     </section>
                     <section>
                         <a href="#">
                             <div>
-                                <h1>브랜드 소개</h1>
-                                <p class="txt">JEVISCO, 제비표페인트의 새로운 이름을 만나 보세요.</p>
+                                <h1>컬러펜 다이어리 세트</h1>
+                                <p class="txt">배스킨라빈스x모나미 콜라보 사전예약 시작!</p>
                             </div>
-                            <p class="pic"><img src="imgs/img_main_brandstory_m.jpg" alt="브랜드 소개"></p>
+                            <p class="pic"><img src="imgs/main_event02.png" alt="컬러펜 다이어리 세트 이벤트"></p>
                         </a>
                     </section>
                     <section>
                         <a href="#">
                             <div>
-                                <h1>인재채용</h1>
-                                <p class="txt">강남제비스코와 함께 성장할 인재를 찾습니다.</p>
+                                <h1>cafe31 출시 기념</h1>
+                                <p class="txt">모든 제조음료&커피 구매시, 100% 당첨쿠폰 증정!</p>
                             </div>
-                            <p class="pic"><img src="imgs/img_main_recruit_m.jpg" alt="인재채용"></p>
+                            <p class="pic"><img src="imgs/main_event03.png" alt="카페31출시기념 음료구매시 100%쿠폰증정"></p>
                         </a>
                     </section>
                     <section>
                         <a href="#">
                             <div>
-                                <h1>강남그룹 역사관</h1>
-                                <p class="txt">강남그룹의 70여년 역사의 발자취를 소개합니다.</p>
+                                <h1>11월 이달의 맛</h1>
+                                <p class="txt">이달의 신제품을 가까운 매장에서 만나보세요!</p>
                             </div>
-                            <p class="pic"><img src="imgs/img_main_history_m.jpg" alt="강남그룹 역사관"></p>
+                            <p class="pic"><img src="imgs/main_event04.png" alt="11월 이달의 신제품"></p>
                         </a>
                     </section>
                 </div>
@@ -288,28 +290,28 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <img src="imgs/bg_main_btn01.png" alt="기술자료 검색">
-                            <span>기술자료 검색</span>
-                            <img src="imgs/img_menu_more.png" alt="">
+                            <img src="imgs/bg_btn01.png" alt="BR STORE">
+                            <span>BR STORE</span>
+                            <img src="imgs/img_menu_more.png" alt="BR STORE">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/bg_main_btn02.png" alt="대리점 안내">
-                            <span>대리점 안내</span>
-                            <img src="imgs/img_menu_more.png" alt="">
+                            <img src="imgs/bg_btn02.png" alt="DELIVERY">
+                            <span>DELIVERY</span>
+                            <img src="imgs/img_menu_more.png" alt="DELIVERY">
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <img src="imgs/bg_main_btn03.png" alt="1:1 문의">
-                            <span>1:1 문의</span>
-                            <img src="imgs/img_menu_more.png" alt="">
+                            <img src="imgs/bg_btn03.png" alt="CONTECT US">
+                            <span>CONTECT US</span>
+                            <img src="imgs/img_menu_more.png" alt="CONTECT US">
                         </a>
                     </li>
                 </ul>
             </section>
-            <p class="dirTop"><a href="#top"><img src="imgs/btn_top.png" alt="위로가기"></a></p>
+            <p class="dirTop"><a href="#top"><img src="imgs/TOP.png" alt="위로가기"></a></p>
         </div><!-- 메인 컨텐츠 끝-->
     </main>
     <footer>
@@ -318,14 +320,16 @@
             <div>
                 <dl class="utilBtm">
                     <dt class="hidden">하단 유틸메뉴</dt>
-                    <dd class="txt"><a href="#">개인정보취급방침</a></dd>
+                    <dd class="txt"><a href="#">창업문의</a></dd>
+                    <dd class="txt"><a href="#">채용문의</a></dd>
                     <dd class="txt"><a href="#">이용약관</a></dd>
-                    <dd class="txt"><a href="#">사이트맵</a></dd>
+                    <dd class="txt"><a href="#">개인정보처리방침</a></dd>
                     <dd class="sns">
                         <ul>
-                            <li><a href="#"><img src="imgs/ic_facebook.png" alt="페이스북"></a></li>
-                            <li><a href="#"><img src="imgs/ic_instagram.png" alt="인스타그램"></a></li>
-                            <li><a href="#"><img src="imgs/ic_ytb.png" alt="유튜브"></a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
                         </ul>
                     </dd>
                 </dl>
@@ -333,20 +337,24 @@
                     <dt>Family Site</dt>
                     <dd>
                         <ul>
-                            <li><a href="#">강남화성</a></li>
-                            <li><a href="#">강남</a></li>
-                            <li><a href="#">KNK코딩스</a></li>
-                            <li><a href="#">강남 KPI</a></li>
-                            <li><a href="#">문화연필</a></li>
-                            <li><a href="#">강남건영</a></li>
-                            <li><a href="#">강남아이텍</a></li>
+                            <li><a href="#">던킨도너츠</a></li>
+                            <li><a href="#">파리바게트</a></li>
+                            <li><a href="#">삼립</a></li>
+                            <li><a href="#">파스쿠찌</a></li>
+                            <li><a href="#">해피포인트카드</a></li>
+                            <li><a href="#">SPC그룹사이트</a></li>
                         </ul>
                     </dd>
                 </dl>
             </div>
         </div>
         <div class="footerBottom">
-            <div></div>
+            <div>
+                <img src="imgs/footer_logo.png" alt="배스킨라빈스 로고">
+                <p>사업자 등록번호 : 303-81-09535 | 비알코리아(주) 대표이사 도세호 | 서울특별시 서초구 남부순환로 2620(양재동 11-149번지)</p>
+                <p>TEL : 080-555-3131 | 개인정보관리책임자 : 김경우</p>
+                <p>Copyright ⓒ 2016 BRKOREA Company. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 </body>

@@ -3,7 +3,10 @@
     --br-main-pink: #eb6ea5;
     --br-main-blue: #004ea2;
     --font-dark: #222;
+    --font-gray:#666;
     --font-white: whitesmoke;
+    --subfont-brown1:#7d7364;
+    --subfont-brown2:#524636;
     --bg-white: #fff;
     --bg-pink: #F5B6D2; 
     --box-shadow: rgba(80,80,80,.5);
@@ -54,21 +57,21 @@ header>div>nav>ul>li>ul{
     position: absolute;
     left: -25px; top: 50px;
     width: 185px;
-    background-color: var(--bg-white);
+    background-color:var(--br-main-pink);
 }
 header>div>nav>ul>li>ul>li{
     position: relative;
     height: 43px;
-    border-bottom: 1px solid var(--br-main-pink);
+    border-bottom: 1px solid var(--bg-white);
 }
 header>div>nav>ul>li>ul>li:last-child{
-    border-bottom-color:var(--br-main-pink);
+    border-bottom-color:var(--bg-white);
 }
 header>div>nav>ul>li>ul>li>a{
     display: block;
     padding-left: 21px;
     height: 43px;
-    color: var(--font-dark);
+    color: var(--font-white);
     font-size: 14px; line-height: 43px;
 }
 /* header>div>nav>ul>li>ul>li.child{
@@ -128,24 +131,20 @@ header>div>nav>ul>li>ul>li:hover>ul{
     border: 0 none;
     background-color: var(--bg-white);
 }
-/* #srchBox>button{
+#srchBox>button{
     box-sizing: border-box;
     border: 0 none;
-    margin-left: 65px; margin-top: 22px;
+    margin-left: 110px; margin-top: 22px;
     padding: 0;
     border-radius: 6px;
-    width: 91px; height: 36px;
-    background: var(--br-main-pink) url(../../imgs/ic_search.png)no-repeat 64px 7px;
+    width: 34px; height: 34px;
+    background: url(../../imgs/ic_search_pi.png)no-repeat 50% 50%/contain;
     text-align: left;
     color: var(--font-white);
     text-indent: 10px;
     letter-spacing: -2px; line-height: 36px;
-} */
-#srchBox>button>img{
-    position: absolute;
-    top: 13px;
-    right: 0;
 }
+
 /*form*/
 #srchBox>form{
     display: none;

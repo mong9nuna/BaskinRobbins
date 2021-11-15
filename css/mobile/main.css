@@ -1,3 +1,17 @@
+/*ROOT*/
+:root {
+    --br-main-pink: #eb6ea5;
+    --br-main-blue: #004ea2;
+    --font-dark: #222;
+    --font-gray:#666;
+    --font-white: whitesmoke;
+    --subfont-brown1:#7d7364;
+    --subfont-brown2:#524636;
+    --bg-white: #fff;
+    --bg-pink: #F5B6D2; 
+    --box-shadow: rgba(80,80,80,.5);
+}
+
 main{}
 @media only screen and (min-width:960px){
     main>aside{
@@ -22,14 +36,7 @@ main>aside>video{
 main>div{
     position: relative;
 }
-.theme{margin-bottom: 20px;}
-.theme>h1{
-    font-family: 'Jua', sans-serif;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    margin: 15px 0;
-}
+.theme{margin: 20px 0;}
 .theme>ul{
     display: flex;
     flex-wrap: wrap;
@@ -46,13 +53,13 @@ main>div{
     width: 100%;
     vertical-align: top;
 }
-/* .theme>ul>li>a>img:nth-child(2){
+.theme>ul>li>a>img:nth-child(2){
     opacity: 0;
     transition: all .5s ease;
 }
 .theme>ul.themeList>li>a>img:nth-child(3){
-    bottom: 0; right: -30px;
-    height: 65%;
+    bottom: -10px; right: -30px;
+    height: 85%;
     transition: all .5s ease;
 }
 .theme>ul>li>a>img:not(:first-child){
@@ -70,7 +77,7 @@ main>div{
 }
 .theme>ul:nth-child(4)>li>a>img:last-child{
     width: auto;
-} */
+}
 
 /* 이벤트 */
 .theme>ul>li:hover>a>img:nth-child(2){
@@ -89,8 +96,9 @@ div.contents{
     padding: 0 15px;
 }
 div.contents h1{
-    font: 26px/64px 'Malgun gothic',sans-serif;
-    color: #004ba9;
+    font: 16px/32px 'Malgun gothic',sans-serif;
+    font-weight: bold;
+    color: var(--subfont-brown2);
 }
 div.contents b{
     width: 57px;height: 19px;
@@ -108,7 +116,7 @@ div.contents .news{
 div.contents>section.coNews{
     overflow: hidden;
     margin-bottom: 30px;
-    border-top: 2px solid#004ba9;
+    border-top: 2px solid var(--bg-pink);
 }
 div.contents>section.coNews>h1{
     margin-bottom: 25px;
@@ -210,7 +218,7 @@ div.contents>div.coInfo{
 }
 div.contents>div.coInfo>section{
     margin-bottom: 30px;
-    border-top: 2px solid #004ba9;
+    border-top: 2px solid var(--bg-pink);
 }
 div.contents>div.coInfo>section:nth-child(1),
 div.contents>div.coInfo>section:nth-child(2){
@@ -226,10 +234,9 @@ div.contents>div.coInfo>section>a>div>h1{
     background: url(../../imgs/img_menu_more02.png)no-repeat 100% 50%;
 }
 div.contents>div.coInfo>section>a>div>p.txt{
-    height: 46px;
-    font: 14px/23px "Malgun Gothic", sans-serif;
+    font: 12px/22px "Malgun Gothic", sans-serif;
     letter-spacing: -1px;
-    color: #004ba9;
+    color: var(--subfont-brown1);
 }
 div.contents>div.coInfo>section>a>p.pic{
     margin-top: 11px;
@@ -255,7 +262,8 @@ section.etc>ul>li:nth-child(2){
 }
 section.etc>ul>li>a{
     display: flex; align-items: center;
-    border: 1px solid #ccc;
+    border: 2px solid var(--bg-pink);
+    color: var(--subfont-brown1);
     height: 70px;
 }
 section.etc>ul>li>a>img:nth-child(1){
