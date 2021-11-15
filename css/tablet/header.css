@@ -53,7 +53,7 @@ header{
     header>div>nav>ul>li>a{
         display: block;
         padding-bottom: 12px;
-        font-family: 'Nanum Gothic' sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-weight: bold;
         font-size: 18px;
         color: var(--font-dark);
@@ -204,7 +204,7 @@ header{
     }
     header>div>nav.active>ul>li>a{
         display: block;
-        font-family: 'Nanum Gothic' sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-weight: bold;
         font-size: 18px;
         line-height: 52px;
@@ -368,8 +368,7 @@ header>div.center>div#lang>dl{
     position: absolute;
     width: 44px; left: -1px; top: -1px;
     border-radius: 6px 6px 0 0;
-    border-bottom: 1px solid #a9b0b8;
-    bottom: 0 none;
+    border-bottom: 0 none;
 }
 header>div.center>div#lang>dl>dd:first-of-type{
     border-radius: 6px 6px 0 0;

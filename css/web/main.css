@@ -111,7 +111,7 @@ div.contents>div.coInfo{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    flex: 0 0 1;
+    flex: 0 1 auto;
 }
 div.contents>div.coInfo>section{
     flex: 0 1 auto; width: calc(50% - 10px);
