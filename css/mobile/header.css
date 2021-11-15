@@ -70,7 +70,7 @@ header{
     }
     header>div>nav.active>ul>li>a{
         display: block;
-        font-family: 'Nanum Gothic' sans-serif;
+        font-family: 'Nanum Gothic', sans-serif;
         font-weight: bold;
         font-size: 12px;
         line-height: 32px;
